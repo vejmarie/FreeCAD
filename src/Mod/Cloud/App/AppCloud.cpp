@@ -48,12 +48,17 @@
 
 #include <CXX/Extensions.hxx>
 #include <CXX/Objects.hxx>
+#include <boost/version.hpp>
 
 #include "AppCloud.h"
 
 using namespace App;
 using namespace std;
+
+#ifdef BOOSTVERSION >= 107400
 using namespace boost::placeholders;
+#endif
+
 XERCES_CPP_NAMESPACE_USE
 
 /* Python entry */
